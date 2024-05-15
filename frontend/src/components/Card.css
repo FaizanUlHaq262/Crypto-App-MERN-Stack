@@ -1,0 +1,56 @@
+.one-div {
+    position: relative;
+    height: 350px;
+    width: 300px;
+    background-color: rgb(15, 15, 15);
+    transform-style: preserve-3d;
+    animation: rot 2s infinite ease;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0px, inset 0 0 90px 0px;
+    color: white;
+    transition: 1.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+  }
+
+    .buttons {
+        margin-top: 0%; 
+        width: 110%; 
+    }
+    .one-div img {
+        margin-bottom: 0%;
+      }
+  
+  .one-div .text {
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .one-div:hover .text {
+    scale: 1.2;
+    opacity: 0.7;
+  }
+  
+  .one-div:hover {
+    box-shadow: 0 0 30px 1000px black, inset 5px 5px 5px 0px rgb(31, 31, 31);
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotateX(-15deg) translateY(0px);
+    }
+  
+    50% {
+      transform: rotateX(-15deg) translateY(-10px);
+    }
+  
+    100% {
+      transform: rotateX(-15deg) translateY(0px);
+    }
+  }
+  
